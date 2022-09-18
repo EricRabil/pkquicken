@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1D0ED73E28D7A70D00AD15E9 /* PassKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1D0ED73D28D7A70D00AD15E9 /* PassKitCore */; };
+		1D0ED74528D7B71300AD15E9 /* SwiftCLI in Frameworks */ = {isa = PBXBuildFile; productRef = 1D0ED74428D7B71300AD15E9 /* SwiftCLI */; };
+		1D0ED74728D7BDB400AD15E9 /* PKAccountStatementExportSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ED74628D7BDB400AD15E9 /* PKAccountStatementExportSession.swift */; };
+		1D0ED74928D7BDCF00AD15E9 /* PKQDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ED74828D7BDCF00AD15E9 /* PKQDefaults.swift */; };
 		1D14077928D7A5AD00EC5F70 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14077828D7A5AD00EC5F70 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,8 @@
 /* Begin PBXFileReference section */
 		1D0ED74028D7A80F00AD15E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D0ED74228D7A86E00AD15E9 /* pkquicken.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pkquicken.entitlements; sourceTree = "<group>"; };
+		1D0ED74628D7BDB400AD15E9 /* PKAccountStatementExportSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAccountStatementExportSession.swift; sourceTree = "<group>"; };
+		1D0ED74828D7BDCF00AD15E9 /* PKQDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKQDefaults.swift; sourceTree = "<group>"; };
 		1D14077528D7A5AD00EC5F70 /* pkquicken */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pkquicken; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D14077828D7A5AD00EC5F70 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D0ED73E28D7A70D00AD15E9 /* PassKitCore in Frameworks */,
+				1D0ED74528D7B71300AD15E9 /* SwiftCLI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +70,8 @@
 				1D0ED74228D7A86E00AD15E9 /* pkquicken.entitlements */,
 				1D14077828D7A5AD00EC5F70 /* main.swift */,
 				1D0ED74028D7A80F00AD15E9 /* Info.plist */,
+				1D0ED74628D7BDB400AD15E9 /* PKAccountStatementExportSession.swift */,
+				1D0ED74828D7BDCF00AD15E9 /* PKQDefaults.swift */,
 			);
 			path = pkquicken;
 			sourceTree = "<group>";
@@ -86,6 +94,7 @@
 			name = pkquicken;
 			packageProductDependencies = (
 				1D0ED73D28D7A70D00AD15E9 /* PassKitCore */,
+				1D0ED74428D7B71300AD15E9 /* SwiftCLI */,
 			);
 			productName = pkquicken;
 			productReference = 1D14077528D7A5AD00EC5F70 /* pkquicken */;
@@ -117,6 +126,7 @@
 			mainGroup = 1D14076C28D7A5AD00EC5F70;
 			packageReferences = (
 				1D0ED73C28D7A70D00AD15E9 /* XCRemoteSwiftPackageReference "Paris" */,
+				1D0ED74328D7B71300AD15E9 /* XCRemoteSwiftPackageReference "SwiftCLI" */,
 			);
 			productRefGroup = 1D14077628D7A5AD00EC5F70 /* Products */;
 			projectDirPath = "";
@@ -133,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D14077928D7A5AD00EC5F70 /* main.swift in Sources */,
+				1D0ED74928D7BDCF00AD15E9 /* PKQDefaults.swift in Sources */,
+				1D0ED74728D7BDB400AD15E9 /* PKAccountStatementExportSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +328,14 @@
 				kind = branch;
 			};
 		};
+		1D0ED74328D7B71300AD15E9 /* XCRemoteSwiftPackageReference "SwiftCLI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jakeheis/SwiftCLI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -323,6 +343,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1D0ED73C28D7A70D00AD15E9 /* XCRemoteSwiftPackageReference "Paris" */;
 			productName = PassKitCore;
+		};
+		1D0ED74428D7B71300AD15E9 /* SwiftCLI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D0ED74328D7B71300AD15E9 /* XCRemoteSwiftPackageReference "SwiftCLI" */;
+			productName = SwiftCLI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
