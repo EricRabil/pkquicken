@@ -1,6 +1,8 @@
 # pkquicken
 Exports all statements for your Apple Card (or any other card where PassKitCore supports exports) to `qfx` files for mass import. Supports date ranges under the hood, will expose via a proper CLI in the future (next time I need to export :P)
 
+> If you can use AMFITrustedKeys, my `certDigest` is `MnmLHzvxdg25/I5+IRT9TwTAAe4+vwQqF4UPRgJViYY=` – the binaries in the release section are signed with my self-trusted CA.
+
 ## usage
 ```bash
 # Prints the debug descriptions of all PKAccounts visible to the process
